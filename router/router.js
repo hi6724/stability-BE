@@ -1,6 +1,6 @@
 import express from 'express';
 
-import { generateImgByText } from '../controller/genImgAPI';
+import { generateImgByText } from '../controller/genImgAPI.js';
 
 const router = express.Router();
 
