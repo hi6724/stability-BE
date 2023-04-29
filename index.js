@@ -2,7 +2,6 @@
 import 'regenerator-runtime';
 import express from 'express';
 import cors from 'cors';
-
 import router from './router/router.js';
 
 const PORT = process.env.PORT || 8809;
