@@ -1,11 +1,10 @@
-import express from "express";
+import express from 'express';
 
-import { testAPI } from "../controller/test";
-import { restAPI } from "../controller/restAPI";
+import { generateImgByText } from '../controller/genImgAPI';
 
 const router = express.Router();
 
-router.get("/generate", testAPI);
-router.get("/", restAPI);
+router.get('/', (req, res) => res.end('HELLO WORLD'));
+router.post('/gen', generateImgByText);
 
 export default router;
