@@ -2,7 +2,6 @@ import axios from 'axios';
 import formidable from 'formidable';
 import * as fs from 'fs';
 import FormData from 'form-data';
-import { Blob } from 'buffer';
 
 export const generateImgByImg = async (req, res) => {
   const form = new formidable.IncomingForm();
